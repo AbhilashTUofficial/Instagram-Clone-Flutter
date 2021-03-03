@@ -51,7 +51,7 @@ class _WatchState extends State<Watch> {
                   ),
                   Positioned(
                     right: 0,
-                    bottom: 100,
+                    bottom: 40,
                     child: Container(
                       margin: EdgeInsets.all(10),
                       child: Column(

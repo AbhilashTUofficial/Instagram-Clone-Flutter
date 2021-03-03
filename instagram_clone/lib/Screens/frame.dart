@@ -56,19 +56,19 @@ class _FrameState extends State<Frame> {
             title: SizedBox.shrink(),
             activeIcon: SvgPicture.asset(
               "assets/Icons/search_active_icon.svg",
-              width: 24,
+              width: 26,
             ),
           ),
           BottomNavigationBarItem(
             backgroundColor: Colors.black,
             icon: Icon(
-              Icons.video_collection_outlined,
-              size: 24,
+              Icons.movie_creation_outlined,
+              size: 26,
               color: Colors.white,
             ),
             title: SizedBox.shrink(),
             activeIcon: Icon(
-              Icons.video_collection,
+              Icons.movie_creation,
               color: Colors.white,
               size: 24,
             ),
@@ -89,7 +89,7 @@ class _FrameState extends State<Frame> {
           BottomNavigationBarItem(
             backgroundColor: Colors.black,
             icon: CircleAvatar(
-              radius: 15,
+              radius: 12,
               backgroundImage: AssetImage("assets/Images/img1.jpg"),
             ),
             title: SizedBox.shrink(),
@@ -100,7 +100,7 @@ class _FrameState extends State<Frame> {
                 borderRadius: BorderRadius.circular(50),
               ),
               child: CircleAvatar(
-                radius: 15,
+                radius: 12,
                 backgroundImage: AssetImage("assets/Images/img1.jpg"),
               ),
             ),
