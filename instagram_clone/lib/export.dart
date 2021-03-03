@@ -1,2 +1,10 @@
 export 'package:instagram_clone/Screens/homePage.dart';
 export 'package:instagram_clone/Screens/Widgets/customAppBar.dart';
+export 'package:instagram_clone/Screens/Widgets/statusScrollView.dart';
+export 'package:instagram_clone/data/statusList.dart';
+export 'package:instagram_clone/data/postList.dart';
+export 'package:instagram_clone/Screens/frame.dart';
+export 'package:instagram_clone/Screens/explorePage.dart';
+export 'package:instagram_clone/Screens/watchPage.dart';
+export 'package:instagram_clone/Screens/notificationPage.dart';
+export 'package:instagram_clone/Screens/accountPage.dart';
