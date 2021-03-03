@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           StatusScrollView(),
+          PostTile(),
         ],
       ),
 

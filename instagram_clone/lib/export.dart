@@ -8,3 +8,4 @@ export 'package:instagram_clone/Screens/explorePage.dart';
 export 'package:instagram_clone/Screens/watchPage.dart';
 export 'package:instagram_clone/Screens/notificationPage.dart';
 export 'package:instagram_clone/Screens/accountPage.dart';
+export 'package:instagram_clone/Screens/Widgets/postTile.dart';

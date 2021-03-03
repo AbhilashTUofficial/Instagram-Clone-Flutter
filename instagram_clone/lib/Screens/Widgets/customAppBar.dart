@@ -94,9 +94,9 @@ class _CustomAppBarState extends State<CustomAppBar> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Icon(
-              Icons.add_box_outlined,
-              size: 28,
+            SvgPicture.asset(
+              "assets/Icons/upload_icon.svg",
+              width: 24,
             ),
             Text(
               "Instagram",
@@ -127,9 +127,10 @@ class _CustomAppBarState extends State<CustomAppBar> {
                       borderRadius: BorderRadius.circular(10)),
                   child: Row(
                     children: [
-                      Icon(
-                        Icons.search_rounded,
-                        color: Colors.white54,
+                      SvgPicture.asset(
+                        "assets/Icons/search_icon.svg",
+                        width: 24,
+                        color: Colors.white70,
                       ),
                       Container(
                         margin: EdgeInsets.only(left: 10),
@@ -214,7 +215,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
       );
     }
     else if(widget.pageIndex==3){
-      return Container();
+      return SizedBox.shrink();
     }
     else if(widget.pageIndex==4){
       return AppBar(
@@ -244,9 +245,9 @@ class _CustomAppBarState extends State<CustomAppBar> {
             ),
             Row(
               children: [
-                Icon(
-                  Icons.add_box_outlined,
-                  size: 28,
+                SvgPicture.asset(
+                  "assets/Icons/upload_icon.svg",
+                  width: 24,
                 ),
                 SizedBox(width: 20),
                 Icon(

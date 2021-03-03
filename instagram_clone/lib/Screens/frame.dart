@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:instagram_clone/export.dart';
 
 class Frame extends StatefulWidget {
@@ -36,58 +37,53 @@ class _FrameState extends State<Frame> {
         items: [
           BottomNavigationBarItem(
             backgroundColor: Colors.black,
-            icon: Icon(
-              Icons.home_outlined,
-              size: 30,
-              color: Colors.white,
+            icon: SvgPicture.asset(
+              "assets/Icons/home_icon.svg",
+              width: 24,
             ),
             title: SizedBox.shrink(),
-            activeIcon: Icon(
-              Icons.home_filled,
-              color: Colors.white,
-              size: 30,
+            activeIcon: SvgPicture.asset(
+              "assets/Icons/home_active_icon.svg",
+              width: 24,
             ),
           ),
           BottomNavigationBarItem(
             backgroundColor: Colors.black,
-            icon: Icon(
-              Icons.search_rounded,
-              size: 30,
-              color: Colors.white,
+            icon: SvgPicture.asset(
+              "assets/Icons/search_icon.svg",
+              width: 24,
             ),
             title: SizedBox.shrink(),
-            activeIcon: Icon(
-              Icons.search_rounded,
-              color: Colors.white,
-              size: 30,
+            activeIcon: SvgPicture.asset(
+              "assets/Icons/search_active_icon.svg",
+              width: 24,
             ),
           ),
           BottomNavigationBarItem(
             backgroundColor: Colors.black,
             icon: Icon(
               Icons.video_collection_outlined,
-              size: 30,
+              size: 24,
               color: Colors.white,
             ),
             title: SizedBox.shrink(),
             activeIcon: Icon(
               Icons.video_collection,
               color: Colors.white,
-              size: 30,
+              size: 24,
             ),
           ),
           BottomNavigationBarItem(
             backgroundColor: Colors.black,
-            icon: Icon(
-              Icons.favorite_border,
-              size: 30,
-              color: Colors.white,
+            icon: SvgPicture.asset(
+              "assets/Icons/love_icon.svg",
+              width: 24,
             ),
             title: SizedBox.shrink(),
-            activeIcon: Icon(
-              Icons.favorite,
+            activeIcon: SvgPicture.asset(
+              "assets/Icons/loved_icon.svg",
               color: Colors.white,
-              size: 30,
+              width: 24,
             ),
           ),
           BottomNavigationBarItem(
