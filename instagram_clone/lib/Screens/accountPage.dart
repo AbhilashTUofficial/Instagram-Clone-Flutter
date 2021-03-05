@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/Screens/Widgets/highlightsScrollView.dart';
 
@@ -18,9 +19,9 @@ class _AccountState extends State<Account> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      body: Column(
+    return Container(
+      color: Colors.black,
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
@@ -40,7 +41,7 @@ class _AccountState extends State<Account> with SingleTickerProviderStateMixin {
                       Column(
                         children: [
                           Text(
-                            "32",
+                            "3",
                             style: TextStyle(color: Colors.white, fontSize: 24),
                           ),
                           Text(
@@ -187,12 +188,13 @@ class _AccountState extends State<Account> with SingleTickerProviderStateMixin {
               indicatorColor: Colors.white70,
               tabs: [
                 Container(
-                    margin: EdgeInsets.only(bottom: 12),
-                    child: Icon(
-                      Icons.grid_on_sharp,
-                      color: Colors.white70,
-                      size: 26,
-                    )),
+                  margin: EdgeInsets.only(bottom: 12),
+                  child: Icon(
+                    Icons.grid_on_sharp,
+                    color: Colors.white70,
+                    size: 26,
+                  ),
+                ),
                 Container(
                     margin: EdgeInsets.only(bottom: 12),
                     child: Icon(
@@ -204,22 +206,60 @@ class _AccountState extends State<Account> with SingleTickerProviderStateMixin {
             ),
           ),
           Container(
-            height: 100,
+            height: 150,
             child: TabBarView(
               controller: _tabController,
               children: [
                 Container(
-                  child: Text(
-                    "1",
-                    style: TextStyle(color: Colors.white),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context).size.width / 3 - 4,
+                        height: MediaQuery.of(context).size.width / 3,
+                        child: Image(
+                          image: AssetImage("assets/Images/img2.jpg"),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.all(2),
+                        width: MediaQuery.of(context).size.width / 3 - 4,
+                        height: MediaQuery.of(context).size.width / 3,
+                        child: Image(
+                          image: AssetImage("assets/Images/img3.jpg"),
+                        ),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width / 3 - 4,
+                        height: MediaQuery.of(context).size.width / 3,
+                        child: Image(
+                          image: AssetImage("assets/Images/img4.jpg"),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 Container(
-                  child: Text(
-                    "2",
-                    style: TextStyle(color: Colors.white),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context).size.width / 3 - 4,
+                        height: MediaQuery.of(context).size.width / 3,
+                        child: Image(
+                          image: AssetImage("assets/Images/img5.png"),
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.all(2),
+                        width: MediaQuery.of(context).size.width / 3 - 4,
+                        height: MediaQuery.of(context).size.width / 3,
+                        child: Image(
+                          image: AssetImage("assets/Images/img6.png"),
+                        ),
+                      ),
+
+                    ],
                   ),
-                )
+                ),
               ],
             ),
           ),
